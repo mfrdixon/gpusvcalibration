@@ -15,4 +15,4 @@ R CMD build gpusvcalibration
 
 R CMD check gpusvcalibration
 
-R CMD install gpusvcalibration <target-filepath>
+R CMD install gpusvcalibration_0.0-1.tar.gz <target-filepath>
