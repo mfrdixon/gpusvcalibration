@@ -1,0 +1,11 @@
+exportPattern("^[[:alpha:]]+")
+exportClasses(
+    "chain" 
+)
+useDynLib(Error_Func)
+export(Load_Chain)
+export(Error_Function)
+export(Copy_Data)
+export(Dealloc_Data)
+export(Set_Model)
+export(Set_Block_Size)
