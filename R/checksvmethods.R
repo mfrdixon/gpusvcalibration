@@ -283,3 +283,15 @@ psi<-function(k,a,b,c,d){
   ret[idx] <-(sin(k[idx]*pi*(d-a)/(b-a))-sin(k[idx]*pi*(c-a)/(b-a)))*(b-a)/(k[idx]*pi)
   return(ret)
 }
+#' This is the R version of the error function and should be used for performance benchmarking and diagnostic purposes only
+Test_Error_Function<-function(p){
+  prices <-rep(0, chain@size)
+  for (i in 1:chain@size){
+    # sigma,kappa,theta,v0,rho
+    prices[i] <- HestonCOS(chain@s,chain@strikes[i],chain@taus[i],r0,q0,p[3],p[1],p[2],p[5],p[4],chain@types[i],nInt)
+  }
+  r <- chain@weights*(chain@prices - prices)
+  RMSE <- sqrt(sum(r*r)/length(r))
+  return (RMSE)
+}
+

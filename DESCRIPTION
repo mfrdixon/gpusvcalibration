@@ -1,17 +1,16 @@
 Package: gpusvcalibration
 Version: 0.0-1
 Date: 2013-01-28
-Title: My First Collection of Functions
-Authors@R: c(person("Joe", "Developer", role = c("aut", "cre"),
-                     email = "Joe.Developer@some.domain.net"),
-              person("Pat", "Developer", role = "aut"),
-              person("A.", "User", role = "ctb",
-	             email = "A.User@whereever.net"))
-Author: Joe Developer and Pat Developer, with contributions from A. User
-Maintainer: Joe Developer <Joe.Developer@some.domain.net>
+Title: gpusvcalibration 
+Authors@R: c(person("Matthew", "Dixon", role = c("aut", "cre"),
+                     email = "mfrdixon@gmail.com"),
+              person("Sabbir", "Khan", role = c("aut","cre")),
+              person("Mohammad", "Zubair", role = c("aut","cre")))
+Author: Matthew Dixon, Sabbir Khan and Mohammad Zubair 
+Maintainer: M Dixon<mfrdixon@gmail.com>
 Depends: R (>= 1.8.0), methods
-Description: A short (one paragraph) description of what
-  the package does and why it may be useful.
+Description: A package for accelerating stochastic volatility model
+	calibration using GPUs 
 License: GPL (>= 2)
-URL: http://www.r-project.org, http://www.another.url
-BugReports: http://pkgname.bugtracker.url
+URL: https://github.com/mfrdixon/gpusvcalibration 
+BugReports: 
